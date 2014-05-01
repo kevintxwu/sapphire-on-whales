@@ -1,0 +1,93 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body, html {
+  background: #f9f6f1;
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  color: #5c5247;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a18f79;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.nobottom {
+  padding-bottom: 0px;
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  width: 800px;
+}
+
+#home {
+  max-width: 100%;
+}
+
+#home_box {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+#logo {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 35%;
+  background: url(image_path("logo.svg"));
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#blurb {
+  padding-left: 260px;
+  padding-right: 260px;
+}
+
+.spacer {
+  height: 14px;
+}
+
+#enter {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  text-transform: uppercase;
+  background: #a18f79;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  box-shadow: 3px 3px #5c5247;
+}

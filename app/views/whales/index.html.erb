@@ -1,0 +1,17 @@
+<div class="container nobottom">
+  <div class="content">
+    <p class="spacer"></p>
+    <h1> Whales </h1>
+    <% @whales.each do |whale| %>
+      <a class="whale tooltip" style="background-color: <%= whale.color %>" name="<%= whale.name %>" href="<%= whale_path(whale.id) %>"></a>
+    <% end %>
+  </div>
+</div>
+<div class="container">
+  <div class="content">
+    <p>
+      <%= link_to 'New Whale', new_whale_path, class: "button" %>
+      <%= link_to 'Back', root_path, class: "button" %>
+    </p>
+  </div>
+</div>

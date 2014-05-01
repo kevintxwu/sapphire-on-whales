@@ -1,0 +1,45 @@
+// Place all the styles related to the Sapphires controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sapphire {
+  width: 200px;
+  height: 200px;
+  float: left;
+  text-decoration: none;
+  background-image: url(image_path("sapphire.svg"));
+  background-size: cover;
+  background-position: center;
+}
+
+.tooltipalt:hover:after{
+    background: #a18f79;
+    box-shadow: 3px 3px #5c5247;
+    border-radius: 10px;
+    position: relative;
+    top: 15px;
+    left: 30px;
+    color: #fff;
+    content: attr(name);
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px;
+    z-index: 98;
+}
+
+.tooltipalt:hover:before {
+  background: #a18f79;
+  box-shadow: 3px 1px #5c5247;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  top: 56px;
+  content: "";
+  display: block;
+  width: 15px !important;
+  height: 15px !important;
+  left: 123px;
+  position: relative;
+  z-index: 99;
+}

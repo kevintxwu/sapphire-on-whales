@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="content">
+    <p class="spacer"></p>
+    <%= form_for :whale, url: whales_path do |f| %>
+      <% if @whale.errors.any? %>
+        <div id="error_explanation">
+          <% @whale.errors.full_messages.each do |msg| %>
+            <p><%= msg %>!</p>
+          <% end %>
+        </div>
+      <% end %>
+      <h1> Make a new whale! </h1>
+      <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </p>
+     
+      <p>
+        <%= f.label :color %><br>
+        <%= f.select :color, options_for_select([['Red', '#e84933'], ['Blue', '#9bcfdd'], ['Purple', '#c87e99'], ['Yellow', '#fee65e'], ['Green', '#c8db4d']]) %>
+      </p>
+
+      <p>
+        <%= f.label :description %><br>
+        <%= f.text_area :description %>
+      </p>
+     
+      <p>
+        <%= f.submit %>
+        <%= link_to 'Back', whales_path, class: "button" %>
+      </p>
+    <% end %>
+  </div>
+</div>

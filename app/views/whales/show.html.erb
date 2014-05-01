@@ -1,0 +1,24 @@
+<div class="container nobottom">
+  <div class="content">
+    <p class="spacer"></p>
+    <p><div class="whale nofloat" style="background-color: <%= @whale.color %>"></div></p>
+    <h1><%= @whale.name %></h1>
+
+    <p><%= @whale.description %></p>
+
+    <% @whale.sapphires.each do |sapphire| %>
+      <a class="sapphire tooltipalt" name="<%= sapphire.name %>" href="<%= sapphire_path(:id => sapphire.id, :whale => @whale) %>"></a>
+    <% end %>
+  </div>
+</div>
+<div class="container">
+  <div class="content">
+    <p class="spacer"></p>
+    <p>
+      <%= link_to 'Edit', edit_whale_path(@whale), class: "button" %>
+      <%= link_to 'Add a Sapphire', new_sapphire_path(:id => @whale), class: "button" %>
+      <%= link_to 'Delete', whale_path(@whale), method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %>
+      <%= link_to 'Back', whales_path, class: "button" %>
+    </p>
+  </div>
+</div>

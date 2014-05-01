@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("body").hide(10).fadeIn(1200);
+    $("#logo").effect("bounce", {times: 3}, 900);
+  });
+</script>
+<div class="container">
+  <div id="logo"></div>
+  <div id="home_box">
+    <div class="content" id="home">
+      <h1> Sapphire on Whales </h1>
+      <p id="blurb"> Sapphire on Whales is a Ruby on Rails application I built to show my proficiency in web application frameworks. </p>
+      <p class="spacer"></p>
+      <a id="enter" href="<%= whales_path %>"> Try it out! </a>
+    </div>
+  </div>
+</div>

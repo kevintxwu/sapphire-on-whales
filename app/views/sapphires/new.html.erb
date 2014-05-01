@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="content">
+    <p class="spacer"></p>
+    <%= form_for @sapphire do |f| %>
+      <h1> Make a new Sapphire! </h1>
+      <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </p>
+
+      <%= f.hidden_field :id, :value => @id %>
+     
+      <p>
+        <%= f.submit %>
+        <%= link_to 'Back', whale_path(@whale), class: "button" %>
+      </p>
+    <% end %>
+  </div>
+</div>

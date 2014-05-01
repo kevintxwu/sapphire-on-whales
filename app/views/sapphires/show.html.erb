@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="content">
+    <p class="spacer"></p>
+    <p><div class="sapphire nofloat"></div></p>
+    <h1><%= @sapphire.name %></h1>
+    <p class="spacer"></p>
+    <p> 
+      <%= link_to 'Delete', sapphire_path(:id => @sapphire, :whale => @whale), method: :delete, data: { confirm: 'Are you sure?' }, class: "button" %> 
+      <%= link_to 'Back', whale_path(@whale), class: "button" %>
+    </p>
+  </div>
+</div>
